@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="PT_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <section class="login">
+            <div class="imagem">
+                <img src="images/logo.svg" alt="Logo do app">
+            </div>
+
+            <div class="formulario">
+                <h1>Login</h1>
+                <p>Seja  bem vindo(a) ao Los Pollos Hermanos,
+                    faça login e aproveite um delicioso banquete.
+                </p>
+                <form >
+                    <input type="text" placeholder="Nome" id="nome">
+                    <input type="password" placeholder="Senha" id="senha">
+                    <input type="submit" onclick="logar(); return false">
+
+                </form>
+
+                <script>
+                    function logar(){
+
+                        var login = document.getElementById('nome').value;
+                        var senha = document.getElementById('senha').value;
+
+                        if(login == "Gus" && senha == "gustavo"){
+                            location.href = "enviar.html"
+                        }else{
+                            alert('Usuario ou senha incorretos')
+                        }
+                    }
+                </script>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>

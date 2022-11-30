@@ -1,0 +1,30 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #EB9F09;
+    display: grid;
+    text-align: center;
+}
+input{
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+    height: 30px;
+
+}
+form{
+    width: 300px;
+    margin: 200px auto;
+    text-align: center;
+}
+
+div.imagem{
+    text-align: center;
+}
+
+div.formulario{
+    text-align: center;
+}
+
